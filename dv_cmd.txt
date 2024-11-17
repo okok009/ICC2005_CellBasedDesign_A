@@ -1,0 +1,708 @@
+<Go in CS_syn folder First>
+
+read_file ../CS_try_d9.v
+source CS_8.sdc
+---------
+compile -map_effort high -area_effort high -power_effort high
+compile_ultra
+--------
+report_timing -delay_type max
+--------------------
+report_area -hierarchy > ./try_d9/part1/area_8.log
+report_power > ./try_d9/part1/power_8.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./try_d9/part1/CS_syn_8.ddc
+write_sdf -version 2.1 ./try_d9/part1/CS_syn_8.sdf
+write -format verilog -hierarchy -output ./try_d9/part1/CS_8.v
+--------------------
+report_area -hierarchy > ./try_d9/part1/area_ultra_8.log
+report_power > ./try_d9/part1/power_ultra_8.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./try_d9/part1/CS_syn_ultra_8.ddc
+write_sdf -version 2.1 ./try_d9/part1/CS_syn_ultra_8.sdf
+write -format verilog -hierarchy -output ./try_d9/part1/CS_ultra_8.v
+----------------
+remove_design -designs 
+
+<Crazy CMD>
+----------------
+<<part1 間隔5>>
+
+read_file ../CS_d9.v
+source CS_30.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part1/area_30.log
+report_power > ./d9/part1/power_30.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_30.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_30.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_30.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_25.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part1/area_25.log
+report_power > ./d9/part1/power_25.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_25.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_25.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_25.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_20.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part1/area_20.log
+report_power > ./d9/part1/power_20.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_20.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_20.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_20.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_15.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part1/area_15.log
+report_power > ./d9/part1/power_15.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_15.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_15.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_15.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_10.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part1/area_10.log
+report_power > ./d9/part1/power_10.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_10.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_10.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_10.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_30.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part1/area_ultra_30.log
+report_power > ./d9/part1/power_ultra_30.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_ultra_30.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_ultra_30.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_ultra_30.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_25.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part1/area_ultra_25.log
+report_power > ./d9/part1/power_ultra_25.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_ultra_25.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_ultra_25.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_ultra_25.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_20.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part1/area_ultra_20.log
+report_power > ./d9/part1/power_ultra_20.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_ultra_20.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_ultra_20.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_ultra_20.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_15.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part1/area_ultra_15.log
+report_power > ./d9/part1/power_ultra_15.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_ultra_15.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_ultra_15.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_ultra_15.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_10.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part1/area_ultra_10.log
+report_power > ./d9/part1/power_ultra_10.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part1/CS_syn_ultra_10.ddc
+write_sdf -version 2.1 ./d9/part1/CS_syn_ultra_10.sdf
+write -format verilog -hierarchy -output ./d9/part1/CS_ultra_10.v
+remove_design -designs 
+
+----------------
+<<part2 間隔1>>
+
+read_file ../CS_d9.v
+source CS_9.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part2/area_9.log
+report_power > ./d9/part2/power_9.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part2/CS_syn_9.ddc
+write_sdf -version 2.1 ./d9/part2/CS_syn_9.sdf
+write -format verilog -hierarchy -output ./d9/part2/CS_9.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_8.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part2/area_8.log
+report_power > ./d9/part2/power_8.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part2/CS_syn_8.ddc
+write_sdf -version 2.1 ./d9/part2/CS_syn_8.sdf
+write -format verilog -hierarchy -output ./d9/part2/CS_8.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_7.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part2/area_7.log
+report_power > ./d9/part2/power_7.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part2/CS_syn_7.ddc
+write_sdf -version 2.1 ./d9/part2/CS_syn_7.sdf
+write -format verilog -hierarchy -output ./d9/part2/CS_7.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_6.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part2/area_6.log
+report_power > ./d9/part2/power_6.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part2/CS_syn_6.ddc
+write_sdf -version 2.1 ./d9/part2/CS_syn_6.sdf
+write -format verilog -hierarchy -output ./d9/part2/CS_6.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_9.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part2/area_ultra_9.log
+report_power > ./d9/part2/power_ultra_9.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part2/CS_syn_ultra_9.ddc
+write_sdf -version 2.1 ./d9/part2/CS_syn_ultra_9.sdf
+write -format verilog -hierarchy -output ./d9/part2/CS_ultra_9.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_8.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part2/area_ultra_8.log
+report_power > ./d9/part2/power_ultra_8.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part2/CS_syn_ultra_8.ddc
+write_sdf -version 2.1 ./d9/part2/CS_syn_ultra_8.sdf
+write -format verilog -hierarchy -output ./d9/part2/CS_ultra_8.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_7.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part2/area_ultra_7.log
+report_power > ./d9/part2/power_ultra_7.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part2/CS_syn_ultra_7.ddc
+write_sdf -version 2.1 ./d9/part2/CS_syn_ultra_7.sdf
+write -format verilog -hierarchy -output ./d9/part2/CS_ultra_7.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_6.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part2/area_ultra_6.log
+report_power > ./d9/part2/power_ultra_6.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part2/CS_syn_ultra_6.ddc
+write_sdf -version 2.1 ./d9/part2/CS_syn_ultra_6.sdf
+write -format verilog -hierarchy -output ./d9/part2/CS_ultra_6.v
+remove_design -designs 
+
+----------------
+<<part3 間隔0.1>>
+
+read_file ../CS_d9.v
+source CS_99.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part3/area_99.log
+report_power > ./d9/part3/power_99.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_99.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_99.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_99.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_98.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part3/area_98.log
+report_power > ./d9/part3/power_98.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_98.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_98.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_98.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_97.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part3/area_97.log
+report_power > ./d9/part3/power_97.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_97.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_97.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_97.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_96.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part3/area_96.log
+report_power > ./d9/part3/power_96.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_96.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_96.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_96.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_95.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part3/area_95.log
+report_power > ./d9/part3/power_95.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_95.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_95.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_95.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_94.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part3/area_94.log
+report_power > ./d9/part3/power_94.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_94.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_94.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_94.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_93.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part3/area_93.log
+report_power > ./d9/part3/power_93.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_93.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_93.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_93.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_92.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part3/area_92.log
+report_power > ./d9/part3/power_92.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_92.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_92.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_92.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_99.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part3/area_ultra_99.log
+report_power > ./d9/part3/power_ultra_99.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_ultra_99.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_ultra_99.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_ultra_99.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_98.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part3/area_ultra_98.log
+report_power > ./d9/part3/power_ultra_98.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_ultra_98.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_ultra_98.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_ultra_98.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_97.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part3/area_ultra_97.log
+report_power > ./d9/part3/power_ultra_97.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_ultra_97.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_ultra_97.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_ultra_97.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_96.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part3/area_ultra_96.log
+report_power > ./d9/part3/power_ultra_96.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_ultra_96.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_ultra_96.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_ultra_96.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_95.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part3/area_ultra_95.log
+report_power > ./d9/part3/power_ultra_95.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_ultra_95.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_ultra_95.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_ultra_95.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_94.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part3/area_ultra_94.log
+report_power > ./d9/part3/power_ultra_94.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_ultra_94.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_ultra_94.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_ultra_94.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_93.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part3/area_ultra_93.log
+report_power > ./d9/part3/power_ultra_93.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_ultra_93.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_ultra_93.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_ultra_93.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_92.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part3/area_ultra_92.log
+report_power > ./d9/part3/power_ultra_92.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part3/CS_syn_ultra_92.ddc
+write_sdf -version 2.1 ./d9/part3/CS_syn_ultra_92.sdf
+write -format verilog -hierarchy -output ./d9/part3/CS_ultra_92.v
+remove_design -designs 
+
+----------------
+<<part4 間隔0.01>>
+
+read_file ../CS_d9.v
+source CS_999.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part4/area_999.log
+report_power > ./d9/part4/power_999.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_999.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_999.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_999.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_998.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part4/area_998.log
+report_power > ./d9/part4/power_998.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_998.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_998.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_998.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_997.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part4/area_997.log
+report_power > ./d9/part4/power_997.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_997.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_997.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_997.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_996.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part4/area_996.log
+report_power > ./d9/part4/power_996.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_996.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_996.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_996.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_995.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part4/area_995.log
+report_power > ./d9/part4/power_995.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_995.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_995.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_995.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_994.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part4/area_994.log
+report_power > ./d9/part4/power_994.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_994.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_994.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_994.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_993.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part4/area_993.log
+report_power > ./d9/part4/power_993.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_993.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_993.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_993.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_992.sdc
+compile -map_effort high -area_effort high -power_effort high
+report_area -hierarchy > ./d9/part4/area_992.log
+report_power > ./d9/part4/power_992.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_992.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_992.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_992.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_999.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part4/area_ultra_999.log
+report_power > ./d9/part4/power_ultra_999.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_ultra_999.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_ultra_999.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_ultra_999.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_998.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part4/area_ultra_998.log
+report_power > ./d9/part4/power_ultra_998.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_ultra_998.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_ultra_998.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_ultra_998.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_997.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part4/area_ultra_997.log
+report_power > ./d9/part4/power_ultra_997.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_ultra_997.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_ultra_997.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_ultra_997.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_996.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part4/area_ultra_996.log
+report_power > ./d9/part4/power_ultra_996.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_ultra_996.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_ultra_996.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_ultra_996.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_995.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part4/area_ultra_995.log
+report_power > ./d9/part4/power_ultra_995.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_ultra_995.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_ultra_995.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_ultra_995.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_994.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part4/area_ultra_994.log
+report_power > ./d9/part4/power_ultra_994.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_ultra_994.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_ultra_994.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_ultra_994.v
+remove_design -designs 
+read_file ../CS_d9.v
+source CS_993.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part4/area_ultra_993.log
+report_power > ./d9/part4/power_ultra_993.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_ultra_993.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_ultra_993.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_ultra_993.v
+remove_design -designs
+read_file ../CS_d9.v
+source CS_992.sdc
+compile_ultra
+report_area -hierarchy > ./d9/part4/area_ultra_992.log
+report_power > ./d9/part4/power_ultra_992.log
+define_name_rules name_rule -case_insensitive 
+change_names -hierarchy -rules name_rule
+change_names -hierarchy -rules verilog
+write -format ddc -hierarchy -output ./d9/part4/CS_syn_ultra_992.ddc
+write_sdf -version 2.1 ./d9/part4/CS_syn_ultra_992.sdf
+write -format verilog -hierarchy -output ./d9/part4/CS_ultra_992.v
+remove_design -designs 
+
+-------------------------------
+<Crazy Test Gate Level>
+
+----------------
+<<part1 間隔5>>
+ncverilog ./d9/testfixture_30.v ./d9/part1/CS_30.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_30.v ./d9/part1/CS_ultra_30.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_25.v ./d9/part1/CS_25.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_25.v ./d9/part1/CS_ultra_25.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_20.v ./d9/part1/CS_20.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_20.v ./d9/part1/CS_ultra_20.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_15.v ./d9/part1/CS_15.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_15.v ./d9/part1/CS_ultra_15.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_10.v ./d9/part1/CS_10.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_10.v ./d9/part1/CS_ultra_10.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+----------------
+<<part2 間隔1>>
+ncverilog ./d9/testfixture_9.v ./d9/part2/CS_9.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_9.v ./d9/part2/CS_ultra_9.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_8.v ./d9/part2/CS_8.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_8.v ./d9/part2/CS_ultra_8.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_7.v ./d9/part2/CS_7.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_7.v ./d9/part2/CS_ultra_7.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_6.v ./d9/part2/CS_6.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_6.v ./d9/part2/CS_ultra_6.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+----------------
+<<part3 間隔0.1>>
+ncverilog ./d9/testfixture_99.v ./d9/part3/CS_99.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_99.v ./d9/part3/CS_ultra_99.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_98.v ./d9/part3/CS_98.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_98.v ./d9/part3/CS_ultra_98.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_97.v ./d9/part3/CS_97.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_97.v ./d9/part3/CS_ultra_97.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_96.v ./d9/part3/CS_96.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_96.v ./d9/part3/CS_ultra_96.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_95.v ./d9/part3/CS_95.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_95.v ./d9/part3/CS_ultra_95.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_94.v ./d9/part3/CS_94.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_94.v ./d9/part3/CS_ultra_94.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_93.v ./d9/part3/CS_93.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_93.v ./d9/part3/CS_ultra_93.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_92.v ./d9/part3/CS_92.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_92.v ./d9/part3/CS_ultra_92.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+----------------
+<<part4 間隔0.01>>
+ncverilog ./d9/testfixture_999.v ./d9/part4/CS_999.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_999.v ./d9/part4/CS_ultra_999.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_998.v ./d9/part4/CS_998.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_998.v ./d9/part4/CS_ultra_998.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_997.v ./d9/part4/CS_997.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_997.v ./d9/part4/CS_ultra_997.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_996.v ./d9/part4/CS_996.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_996.v ./d9/part4/CS_ultra_996.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_995.v ./d9/part4/CS_995.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_995.v ./d9/part4/CS_ultra_995.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_994.v ./d9/part4/CS_994.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_994.v ./d9/part4/CS_ultra_994.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_993.v ./d9/part4/CS_993.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_993.v ./d9/part4/CS_ultra_993.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_992.v ./d9/part4/CS_992.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
+ncverilog ./d9/testfixture_ultra_992.v ./d9/part4/CS_ultra_992.v -v ./tsmc13_neg.v +define+SDFD9 +access+r -clean
